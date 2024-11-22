@@ -35,7 +35,7 @@ AggregatedSales AS (
         StoreID, ProductID
 ),
 --INSERT INTO Sales.ProductStoreSummary (StoreID, ProductID, TotalSalesAmount, TotalQuantity, AvgPrice)
-
+--step 6--
 RankedProducts AS (
     SELECT 
         StoreID,
