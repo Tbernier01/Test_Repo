@@ -23,14 +23,8 @@ erDiagram
         int TotalQuantity
         decimal AvgPrice
     }
-    TopProductsByStore {
-        int StoreID PK
-        int ProductID FK
-        int Rank
-        decimal TotalSalesAmount
-    }
+   
 
     %% Relationships between tables with Foreign Keys
     SalesOrderHeader ||--o| SalesOrderDetail: "Has"
     SalesOrderDetail ||--o| ProductStoreSummary: "Aggregates"
-    SalesOrderDetail ||--o| TopProductsByStore: "Ranks"
