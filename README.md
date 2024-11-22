@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     %% Extract Phase
     subgraph Extract [Extract Phase]
