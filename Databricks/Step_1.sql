@@ -33,23 +33,5 @@ AggregatedSales AS (
         FilteredSales
     GROUP BY 
         StoreID, ProductID
-),
---INSERT INTO Sales.ProductStoreSummary (StoreID, ProductID, TotalSalesAmount, TotalQuantity, AvgPrice)
---step 6--
-RankedProducts AS (
-    SELECT 
-        StoreID,
-        ProductID,
-        SUM(LineTotal) AS TotalSalesAmount,
-        RANK() OVER (PARTITION BY StoreID ORDER BY SUM(LineTotal) DESC) AS Rank
-    FROM 
-        FilteredSales
-    GROUP BY 
-        StoreID, ProductID
 )
-SELECT 
-    StoreID, ProductID, Rank, TotalSalesAmount
-FROM 
-    RankedProducts
-WHERE 
-    Rank <= 5;
+SELECT * FROM AggregatedSales;
