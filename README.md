@@ -11,13 +11,10 @@ graph TD
         Step03[Step-03: Join SalesOrderHeader and SalesOrderDetail]
         Step04[Step-04: Filter Current Year Sales]
         Step05[Step-05: Aggregate Metrics: TotalSalesAmount, TotalQuantity, AvgPrice]
+        Step06[Step-06: Find Top 10 best combination Store/Product]
     end
 
-    %% Load Phase
-    subgraph Load [Load Phase]
-        Step06[Step-06: Load into ProductStoreSummary]
-    end
-
+ 
     %% Defining dependencies
     Step01 --> Step03
     Step02 --> Step03
