@@ -1,4 +1,3 @@
---Datenmodell--
 
 ```mermaid
 erDiagram
