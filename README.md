@@ -11,7 +11,7 @@ graph TD
         Step03[Step-03: Join SalesOrderHeader and SalesOrderDetail]
         Step04[Step-04: Filter Current Year Sales]
         Step05[Step-05: Aggregate Metrics: TotalSalesAmount, TotalQuantity, AvgPrice]
-        Step06[Step-06: Find Top 10 best combination Store/Product]
+        Step06[Step-06: Find Top 10 best combination Store/Product V2]
     end
 
  
