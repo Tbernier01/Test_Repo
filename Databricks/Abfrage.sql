@@ -34,4 +34,5 @@ AggregatedSales AS (
     GROUP BY 
         StoreID, ProductID
 )
-SELECT * FROM AggregatedSales ORDER BY TotalSalesAmount DESC;
+SELECT * FROM AggregatedSales ORDER BY TotalSalesAmount DESC
+LIMIT 10;
