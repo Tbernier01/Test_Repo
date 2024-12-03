@@ -1,3 +1,4 @@
+--JIRA Ticket Anpassung wegen Bug--
 --Test--
 
 WITH FilteredSales AS (
@@ -22,6 +23,7 @@ WITH FilteredSales AS (
         YEAR(soh.OrderDate) = YEAR(GETDATE()) -- Filter current year
 ),
   --step 5--
+    --AVGERAGe über unit Price--
 AggregatedSales AS (
     SELECT 
         StoreID,
